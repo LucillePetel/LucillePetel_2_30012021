@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+body{
+    font-family: "Raleway";
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+#bloc_page {
+    width: 95%; 
+    margin: auto;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav li {
+    margin: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color:black;
+}
+
+.categories {
+    background-color: #f2f2f2;
+    border-radius: 15px; 
+    width: 65%;
+    padding: 30px 30px 30px 30px;
+    align-items: center;
+}
+
+.logements {
+    display: flex;
+}
+
+article{
+    display: block;
+    
+}
+
+.first {
+
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer nav ul {
+    list-style-type: none; 
+}
+
+
+
