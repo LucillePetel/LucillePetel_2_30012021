@@ -1,0 +1,176 @@
+#bloc_page {
+    width: auto;
+
+}
+
+/*en-tete*/
+header {
+    position: relative;
+    width:100%;
+    display: block;
+}
+
+#logo-reservia {
+    position: absolute;
+    left: 20px;
+    top: 20px
+}
+
+#link {
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+#link-secondary {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1em;    
+}
+
+#link-primary {
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.button-hebergements {
+    padding: 30px;
+    width: 50%;
+    margin: 0;
+}
+
+
+.button-acitivites {
+    padding: 30px;
+    width: 50%;
+    margin: 0;
+}
+
+.button-hebergements:hover {
+    border-bottom: 3px solid #0065fc;
+}
+
+
+.button-acitivites:hover {
+    border-bottom: 3px solid #0065fc;
+}
+
+
+/*titre et recherche*/
+
+#filters h2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#filters {
+    justify-content: flex-start;
+}
+
+.filter {
+    margin-right: 5px;
+}
+
+#info {
+    font-size: 0.9em;;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-search {
+    width: 95%;
+}
+
+/*hebergement*/
+
+.categories {
+    width:auto;
+    background-color: #ffffff;
+    padding: 10px 0 30px 0; 
+}
+
+
+#places {
+    margin-left: 0;
+}
+
+
+.first {
+    margin: 15px 15px 15px 0;
+    width: 90%;
+    padding: 3px;
+}
+
+.first img {
+    width: 100%;
+}
+
+/*populaire*/ 
+
+aside {
+  width: 90%; 
+  margin-left: 0;
+}
+
+.second {
+    padding: 3px;
+}
+
+/*Activités*/
+
+#activities {
+    flex-direction: column;
+}
+
+#activities h2 {
+    margin-left: 30px;
+}
+
+#tourism {
+    grid-template-columns: 1fr;
+}
+
+
+.activities-max {
+    width: 90%;
+}
+
+.activities-min {
+    width: 90%;
+} 
+
+.activities-max .third {
+    height: 187px;
+}
+
+.activities-max .third img {
+    height: 147px;
+    width: 100%;
+}
+
+.activities-min .third {
+    height: 187px;
+}
+
+.activities-min .third img {
+    width: 100%;
+}
+
+
+footer {
+    flex-direction: column;
+}
+
+footer div {
+    margin: 15px 15% 15px 15px
+}

@@ -1,0 +1,101 @@
+#bloc_page {
+    width: auto;
+
+}
+
+header {
+    position: relative;
+    width:100%;
+}
+
+#filters h2 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.descrition h3 {
+font-size: 1em;
+}
+
+aside {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 5px 15px 25px 15px;
+}
+
+#chart-line {
+    margin-left:  12px;
+}
+
+.second img {
+    width: 100px
+}
+
+.hosting-popular {
+    display: flex;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.second {
+    margin: 10px 12px 0 12px;
+}
+
+.categories {
+    width:100%;
+    align-content: space-around;
+}
+
+#places { 
+    margin-left: 0;;
+}
+
+
+.first img {
+    width: 300px;
+}
+
+#activities {
+    width: 100%;
+}
+
+#activities h2 {
+    margin-left: 30px;
+}
+
+#tourism {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities-min .third img {
+    width: 100%;
+}
+
+.activities-max .third img {
+    width: 100%;
+}
+
+
+
+footer div {
+    margin: 15px 10% 15px 15px;
+}
+
+
+
+@media screen and (min-width: 850px) and (max-width: 1112px) {
+
+    .first {
+        width:40%;
+    }
+    
+    .first img {
+        width: 100%;
+    }
+    
+
+}

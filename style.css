@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: "Raleway";
+    font-family: "Raleway", "Sans serif";
     color: #000000;
     background-color: #ffffff;
 }
@@ -21,30 +21,52 @@ header {
     align-items: stretch;
 }
 
-#header-link {
+#logo-reservia {
+    margin-top: 20px;
+}
+
+#link {
+    display: flex;
+}
+
+#link a:hover {
     color: #0065fc;
+    font-weight: bold;
 }
 
 #sign-up {
     font-weight: bold;
-    color: #0065fc;
 }
 
-h1 {
+#head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#head h1 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.9em;
     margin-bottom: 0;
 }
 
+#head p {
+    font-size: 1em;;
+}
+
 span {
-    font-size: 1.15em;
+    font-size: 1em;
 }
 
 .filter {
     border: 3px solid #f2f2f2;
     border-left:#ffffff;
-    padding: 12px 12px 12px 0;
+    padding: 12px 15px 12px 0px;
     border-radius: 50px;
+}
+
+.filter:hover {
+    background-color: #deebff;
 }
 
 .icons-filters {
@@ -64,13 +86,12 @@ span {
 }
 
 #info {
-    font-size: 1em;
+    font-size: 0.97em;
 }
 
 .container-search {
     margin-top: 40px;
     display:flex;
-
 }
 
 #map-icon {
@@ -97,20 +118,34 @@ button {
     color: #ffffff;
     font-size: 0.9em;
     font-weight: bold;
+    transition: transform .2s;
 }
+
+button:hover {
+    transform: scale(1.03);
+}
+
 
 p { 
     margin-top: 4px;
-    font-size: 1.20em;
+    margin-bottom: 5px;
+    font-size: 0.95em;
 }
 
 h3 {
     margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.fa-star {
+    font-size: 15px;
 }
 
 
@@ -130,6 +165,7 @@ header nav li {
     justify-content: space-between;
     width: 60%;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 
@@ -144,15 +180,26 @@ a:visited {
 
 #location {
     display:flex;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
+    flex-wrap: wrap-reverse
 }
 
 .categories {
     background-color: #f2f2f2;
-    border-radius: 15px; 
+    border-radius: 15px;
     width: 60%;
-    padding: 30px 30px 30px 30px;
+    padding: 10px 30px 30px 30px;
+    
+}
+
+.categories  h2{ 
+    margin-left: 25px;
+}
+
+#more {
+    margin-left: 25px;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .logements {
@@ -162,13 +209,17 @@ a:visited {
 
 }
 
-img {
-    object-fit: none;
+.descrition {
+    display:flex;
+    flex-direction: column; 
+    margin: 2px 0 10px 10px;
+    justify-content: space-between;
+
 }
 
-.descrition {
-    display:block; 
-    margin-left: 10px;
+.descrition h3 {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .first {
@@ -187,10 +238,11 @@ img {
 }
 
 .first img {
-    border-radius: 20px;
-    height : 150px;
+    height : 135px;
     width : 250px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
+
 }
 
 .second {
@@ -213,8 +265,9 @@ img {
 
 .second img {
     border-radius: 20px 0 0 20px;
-    height: 150px;
+    height: 135px;
     width: 150px;
+    object-fit: cover;
 }
 
 .grade-icon-on  {
@@ -225,18 +278,11 @@ img {
     color: #f2f2f2;
 }
 
-.second p {
-    margin-bottom: 45px;
-}
-
-
 .third {
-    display: block;
     background-color: #ffffff; 
     border-radius: 20px;
     margin: 25px 0 25px 0; 
-    padding: 5px;
-    box-shadow: 3px 3px 3px 3px #cbccce;
+    box-shadow: 0 0 20px #0000002e;
     transition: transform .2s;
 }
 
@@ -252,11 +298,12 @@ img {
 #chart-line {
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 aside {
     background-color: #f2f2f2;
-    padding: 30px 30px 30px 30px;
+    padding: 10px 30px 30px 30px;
     border-radius: 15px;
     margin-left: 20px;
     width: 30%;
@@ -270,14 +317,17 @@ figure {
     margin: auto;
 }
 
+
 #tourism {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center; 
+    width: 100%;
 }
 
 .activities-max .third {
-    height: 400px;
+    height: 415px;
 }
 
 
@@ -288,12 +338,12 @@ figure {
 
 .activities-max .third img {
     object-fit: cover;
-    width: 290px;
+    width: 300px;
     height : 360px;
 }
 
 .activities-min .third {
-    height: 187px; 
+    height: 195px; 
 }
 
 .activities-min {
@@ -302,26 +352,26 @@ figure {
 
 .activities-min .third img {
     object-fit: cover;
-    width: 290px;
+    width: 300px;
     height: 147px;
 }
 
 figcaption {
     padding-left: 8px;
     font-weight: bold;
-    font-size: 1.15em;
+    font-size: 1.03em;
+    padding-top: 6px;
 }
 
 
 footer {
     display: flex;
     background-color: #f2f2f2;
-    border-radius: 20px;
     flex-wrap: wrap;
 }
 
 footer div {
-    margin: 15px 15% 15px 15px;
+    margin: auto;
     display: block;
 }
 
@@ -333,6 +383,50 @@ footer ul {
 footer li {
     margin: 12px 0 12px 0;
 }
+
+footer li:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 1450px) and (max-width: 1785px) {
+
+    
+    #bloc_page {
+        width: auto;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1786px) and (max-width: 1845px) {
+
+    .first {
+        width:40%;
+    }
+    
+    .first img {
+        width: 100%;
+    }
+    
+
+}
+
+
+@media screen and (min-width: 1450px) and (max-width: 1485px) {
+
+    .first {
+        width:40%;
+    }
+    
+    .first img {
+        width: 100%;
+    }
+    
+
+}
+
 
 
 
