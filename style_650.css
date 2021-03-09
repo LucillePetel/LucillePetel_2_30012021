@@ -48,7 +48,7 @@ header {
 }
 
 
-.button-acitivites {
+.button-activities {
     padding: 30px;
     width: 50%;
     margin: 0;
@@ -57,11 +57,13 @@ header {
 
 .button-hebergements:hover {
     border-bottom: 3px solid #0065fc;
+    border-top: none;
 }
 
 
-.button-acitivites:hover {
+.button-activities:hover {
     border-bottom: 3px solid #0065fc;
+    border-top: none;
 }
 
 

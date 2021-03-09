@@ -181,11 +181,11 @@ header nav li {
 }
 
 .button-hebergements:hover {
-    border-top: 3px solid  #0065fc;
+    border-top: 5px solid  #0065fc;
 }
 
 .button-activities:hover {
-    border-top: 3px solid  #0065fc;
+    border-top: 5px solid  #0065fc;
 }
 
 #filters {
