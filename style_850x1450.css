@@ -81,9 +81,16 @@ aside {
 
 
 
-footer div {
-    margin: 15px 10% 15px 15px;
+.foot__link {
+    margin: 0;
 }
+
+.foot {
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+}
+
 
 
 

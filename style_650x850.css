@@ -40,6 +40,13 @@ aside {
     grid-template-rows: repeat(2, 1fr);
 }
 
+.foot {
+    max-width: 100%;
+}
 
+.foot__link {
+    
+    padding: 2rem 2rem 2rem 0;
+}
 
 

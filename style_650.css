@@ -16,6 +16,7 @@ header {
     top: 20px;
 }
 
+
 #link {
     display:flex;
     flex-direction: column-reverse;
@@ -43,6 +44,7 @@ header {
     padding: 30px;
     width: 50%;
     margin: 0;
+    border-bottom: 3px solid #f2f2f2;
 }
 
 
@@ -50,6 +52,7 @@ header {
     padding: 30px;
     width: 50%;
     margin: 0;
+    border-bottom: 3px solid #f2f2f2;
 }
 
 .button-hebergements:hover {
@@ -71,11 +74,17 @@ header {
 
 #filters {
     justify-content: flex-start;
+    width: 90%;
+}
+
+.filters__card {
+    margin: 15px 10px 0 0;
 }
 
 .filter {
     margin-right: 5px;
 }
+
 
 #info {
     font-size: 0.9em;;
@@ -87,8 +96,20 @@ header {
     flex-wrap: wrap;
 }
 
+input {
+    width: 19rem;
+}
+
 .container-search {
     width: 95%;
+}
+
+.search-text {
+    display: none;
+}
+
+.search-icon {
+    font-size: 1.3rem;
 }
 
 /*hebergement*/
@@ -167,10 +188,12 @@ aside {
 }
 
 
-footer {
+.foot {
     flex-direction: column;
 }
 
-footer div {
-    margin: 15px 15% 15px 15px
+.foot__link {
+    margin: 15px 15% 15px 15px;
+    width: 100%;
+    padding: 0;
 }
