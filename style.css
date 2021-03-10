@@ -20,6 +20,7 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: stretch;
+    height: 110px;
 }
 
 #logo-reservia {
@@ -180,12 +181,14 @@ header nav li {
     padding: 40px;
 }
 
+
+
 .button-hebergements:hover {
-    border-top: 5px solid  #0065fc;
+    border-top: 4px solid  #0065fc;
 }
 
 .button-activities:hover {
-    border-top: 5px solid  #0065fc;
+    border-top: 4px solid  #0065fc;
 }
 
 #filters {
